@@ -21,6 +21,12 @@ pyxelそのもののサンプルゲームのダウンロードは下記を実行
 $ install_pyxel_examples
 ```
 
+## 画像の修正
+
+```sh
+$ pyxeleditor images/my_resource.pyxres
+```
+
 ## 参考にしたURL
 
 - https://github.com/kitao/pyxel/blob/master/README.ja.md
