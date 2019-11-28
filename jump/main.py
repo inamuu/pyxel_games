@@ -1,8 +1,27 @@
 # coding: utf-8
 
-import sys
+import pyxel
 
-def main():
-    print('hello world')
+WINDOW_W = 120
+WINDOW_H = 160
+CAT_W = 16
+CAT_H = 16
 
-if __name__ == '__main__': main()
+class App:
+    def __init__(self):
+        pyxel.init(WINDOW_W, WINDOW_H, caption='Hello inamuu')
+        pyxel.image(0).load(0, 0, "pyxel_examples/assets/pyxel_logo_38x16.png")
+        pyxel.image(1).load(0, 0, "pyxel_examples/assets/cat_16x16.png")
+
+        pyxel.run(self.update, self.draw)
+
+    def update(self):
+        if pyxel.btnp(pyxel.KEY_Q):
+            pyxel.quit()
+
+    def draw(self):
+        pyxel.cls(0)
+        pyxel.blt(60, 65, 0, 0, 0, 38, 16)
+        pyxel.blt(75, 45, 1, 0, 0, CAT_W, CAT_H, 5)
+
+App()
