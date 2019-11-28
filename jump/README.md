@@ -10,7 +10,7 @@ pip3 install -r requirements.txt
 
 ## Example
 
-サンプルゲームのダウンロードは下記を実行。
+pyxelそのもののサンプルゲームのダウンロードは下記を実行。
 
 ```sh
 $ install_pyxel_examples
