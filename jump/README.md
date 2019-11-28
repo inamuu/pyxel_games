@@ -1,14 +1,19 @@
 jump
 ===
 
-## Install
+## 環境
+
+- MacOS 10.14
+- Python3.8.0
+
+## インストール
 
 ```sh
 brew install sdl2 sdl2_image 
 pip3 install -r requirements.txt
 ```
 
-## Example
+## pyxelのサンプルゲームをダウンロード
 
 pyxelそのもののサンプルゲームのダウンロードは下記を実行。
 
