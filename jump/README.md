@@ -1,27 +1,22 @@
-# ツール名
-
-ツール作るときにtemplatesをコピーして使うと便利そう。
-
-## Setup
-
-.env.sampleをコピーして.envを作り、中身をAWS Credentialsにあわせて修正する。
-
-```sh
-cp .env.sample .env
-```
+jump
+===
 
 ## Install
 
 ```sh
-pip3 install -r requirements.txt -t site-packages
+brew install sdl2 sdl2_image 
+pip3 install -r requirements.txt
 ```
 
-## Usage
+## Example
 
-使い方
+サンプルゲームのダウンロードは下記を実行。
 
 ```sh
-python3 main.py 
+$ install_pyxel_examples
 ```
 
 ## 参考にしたURL
+
+- https://github.com/kitao/pyxel/blob/master/README.ja.md
+- https://cpp-learning.com/pyxel_day1/
