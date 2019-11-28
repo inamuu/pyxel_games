@@ -2,7 +2,7 @@
 
 import pyxel
 
-WINDOW_W = 120
+WINDOW_W = 160
 WINDOW_H = 160
 CAT_W = 16
 CAT_H = 16
@@ -12,6 +12,8 @@ class App:
         pyxel.init(WINDOW_W, WINDOW_H, caption='Hello inamuu')
         pyxel.image(0).load(0, 0, "pyxel_examples/assets/pyxel_logo_38x16.png")
         pyxel.image(1).load(0, 0, "pyxel_examples/assets/cat_16x16.png")
+
+        pyxel.mouse(True)
 
         pyxel.run(self.update, self.draw)
 
